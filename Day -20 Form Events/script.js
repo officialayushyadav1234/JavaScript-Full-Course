@@ -1,8 +1,10 @@
-/*const fullname=document.getElementById("name");
+/*
+const fullname=document.getElementById("name");
 fullname.addEventListener("change",()=>{
     console.log(fullname.value)
-}) */
-
+}) 
+*/
+  
     const myForm=document.getElementById("myForm")
     myForm.addEventListener("submit",(e)=>{
         e.preventDefault()
