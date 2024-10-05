@@ -12,7 +12,7 @@ const obj={
     city:"Noida"
 }
 console.log(obj.city) 
-console.log(obj["user name"])  */
+console.log(obj["user name"])  */  
 
 
 

@@ -1,30 +1,46 @@
-/* 1. push()
+/*
+// 1. push()
 
 const arr=[10,20,30,40,50]
 const res=arr.push(60)
-console.log(arr)
-console.log(res)
+console.log(arr)   // (6) [10, 20, 30, 40, 50, 60]
+console.log(res)  // 6
 */
 
-/* pop() 
+/*
+//2. pop() 
 const arr=[1,2,3,4,5,6];
 const res=arr.pop()
 console.log(arr)
-console.log(res) */
+console.log(res) 
+*/
 
 
-/* unshift() 
+/*3. unshift() 
 const movies=["PHP","Welcome"]
 const res=movies.unshift("Dhamaal","Hungama")
 console.log(movies)
 console.log(res) // it return the new length of an array*/
 
-/* shift() 
+/*4. shift() 
 
 const movies=["Race-3","Dhamal","PHP"]
 const res=movies.shift()
 console.log(movies)
 console.log(res)*/
+
+
+/*
+// 5. splice() method
+// Add two elements at index 1
+let fruits = ['Strawberry', 'Banana', 'Mango'];
+fruits.splice(1, 0, 'Pineapple', 'Grapes');
+console.log(fruits); // Outputs: ['Strawberry', 'Pineapple', 'Grapes', 'Banana', 'Mango']
+
+// Remove two elements from index 2
+fruits.splice(2, 2);
+console.log(fruits); // Outputs: ['Strawberry', 'Pineapple', 'Mango']
+*/
 
 
 /*6 slice(a,b)
@@ -61,32 +77,51 @@ if(movies.includes("Dhamaal",1))
 }
 */
 
-/* 10. sort(callback) 
 
+
+/*
+
+// 10. sort(callback) 
 const arr=[8,4,7,5,3,6,2,1]
 
-arr.sort(function(a,b){
+// Using Simple function
+ arr.sort(function(a,b){
             return (a-b)
-        })
+        }) 
 
-// arr.sort((a,b)=>a-b) Ascending Order
-// arr.sort((a,b)=>b-a) Descending Order
+// Using Arrow function            
+//  arr.sort((a,b)=>a-b) // Ascending Order
+// arr.sort((a,b)=>b-a) // Descending Order
 console.log(arr)
 */
 
+
+
+
+// 11 . ---------------------  foreach(callback)  -------------
+// ---- Example --- Find Even number 
+const arr = [1, 2, 3, 4, 5];
+arr.forEach((val)=> {
+  if(val % 2 === 0)
+  {
+    console.log(val+" "+"is even number;");
+  }
+});
+
 /*
-const arr=[1,2,3,4,5]   //[1,2,3,4,5]
+// --- Example 1 ---
+const arr=[1,2,3,4,5]    //[1,2,3,4,5]
 const output=[]
 
 arr.forEach((val,i,array)=>{
     output.push(val**2);
 })
-
 const res=[]
 output.forEach(val=>res.push(Math.sqrt(val)))
-console.log(res) */
+console.log(res)  */
 
 /*
+// ---- Example 2 -------
 const arr=[1,2,3,4,5]  //[1,8,27,64,125]
 
 arr.forEach((val,i,arrary)=>{
@@ -95,7 +130,10 @@ arr.forEach((val,i,arrary)=>{
 console.log(arr) */
 
 
-/* map(callback) method
+
+
+/*
+// 12. ------------------------- map(callback) method ------------------
 const arr=[1,2,3,4,5];
 const res=arr.map((val,i,array)=>{
                     array[i]=val*10                    
@@ -104,7 +142,10 @@ console.log(arr)
 console.log(res)
 */
 
-/* filter(callback)
+
+
+/* 13. -------------------- filter(callback) ------------------
+
 const price=[100,200,300,400,500,600,700,800,900,1000]
 
 const res=price.filter((value,index,array)=>value>600)
