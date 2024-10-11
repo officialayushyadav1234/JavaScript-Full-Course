@@ -8,26 +8,28 @@
 
 
 // ----------------- Example 1 ---------------
-/*
+
+// Inside Object method
 const obj={
     name:"Tinku",
     getDetails:function () {
-        console.log(this)
+        console.log(this)     // refer current object -->> {name: 'Tinku', getDetails: ƒ}
       }
 }
 
 obj.getDetails()
-*/
+
 
 // ------------------- Example 2 ----------------
+
+// Inside Object method In Arrow function
 /*
 const obj={
   name:"Tinku",
   getDetails:()=>{
-      console.log(obj)
-      console.log(this)
+    console.log(obj)             // refer current object-->> {name: 'Tinku', getDetails: ƒ}
+    console.log(this)            // refer -->> window Objects
    }
 }
-
 obj.getDetails()
 */
