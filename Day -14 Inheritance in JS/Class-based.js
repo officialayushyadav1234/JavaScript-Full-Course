@@ -2,6 +2,8 @@
 In ES6, 
 JavaScript introduced the class syntax, which makes it easier to write and understand inheritance. 
 Even though it looks like classical inheritance from other languages (like Java or C++), it's still using JavaScript's prototype-based inheritance under the hood.
+
+You can extend one class from another using the extends keyword. This allows the child class to inherit properties and methods from the parent class.
 */
 
 

@@ -1,3 +1,5 @@
+// Before the introduction of class in ES6, inheritance in JavaScript was commonly done using constructor functions and Object.create() for inheritance.
+
 
 // ---------------------- Example -----------------
 function Animal(name) {

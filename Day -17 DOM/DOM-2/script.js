@@ -1,8 +1,15 @@
-/* const h1=document.createElement("h1")
+ // --------------------  Create and Insert element --------------------
+ 
+ 
+ 
+ const h1=document.createElement("h1")
 h1.textContent="Jai Shree Ram 🙏"
+console.log(h1);
 
+// for insert h1 element as last child
 const body=document.body
-body.appendChild(h1) */
+body.appendChild(h1) 
+
 
 /*
 const list1=document.createElement("li")
@@ -32,6 +39,7 @@ div.insertAdjacentElement("afterend",p2)
 
 */
 
+/*
 const first=document.createElement("p")
 const last=document.createElement("p")
 
@@ -41,4 +49,4 @@ last.textContent="Paragraph Tag-3"
 const div=document.getElementById("box")
 
 div.insertAdjacentElement("afterbegin",first)
-div.insertAdjacentElement("beforeend",last)
+div.insertAdjacentElement("beforeend",last)   */

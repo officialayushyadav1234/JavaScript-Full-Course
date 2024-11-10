@@ -8,17 +8,20 @@ function findTotal(...i)   //rest operator
 }
 findTotal(...arr)  //spread operator */
 
+
+
 /* spread operator use case with array
 
 const foods=["Maggie","Ice Cream"]
 const clothes=["T-shirt","Jeans"]
 const footwear=["Shocks","Crocs"]
 
-
 const total=[...foods,...clothes,...footwear]
 console.log(total) */
 
-/* Spread Operator use case with object*/
+
+
+/* Spread Operator use case with object */
 
 const obj1={
   name:"Tinku",

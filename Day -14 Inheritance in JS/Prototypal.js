@@ -11,7 +11,7 @@ In JavaScript, objects can directly inherit properties from other objects via pr
 // ----------------- Example ------------
 const human={
   eat:function(){
-      console.log(`${this.name} can east`)
+      console.log(`${this.name} can eat`)
   },
   sleep:function(){
       console.log(`${this.name} can sleep`)
@@ -26,5 +26,6 @@ const user={
   }
 }
 
+// Object.getPrototypeOf(human);
 user.__proto__=human;
-console.log(user.hasOwnProperty("sleep"))
+console.log(user.hasOwnProperty("name"))   // 
